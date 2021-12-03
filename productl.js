@@ -1,41 +1,57 @@
+window.addEventListener("DOMContentLoaded", start);
+
+let productlistURL =
+  "http://tolloman.com/mmd21ex/wp-json/wp/v2/painting?per_page=100&orderby=title&order=asc&_embed";
+
 const urlParams = new URLSearchParams(window.location.search);
-const brandname = urlParams.get("name");
+const catid = urlParams.get("catid"); //lacj
 
-fetch("http://tolloman.com/mmd21ex/wp-json/wp/v2/categories?_fields=name")
-  .then(function (res) {
-    return res.json();
-  })
-  .then(function (data) {
-    handleBreadCrumbs(data);
-  });
-
-function handleBreadCrumbs(data) {
-  console.log(data);
-  data.forEach(showCate);
+function start() {
+  getProducts(catid);
+  makeBreadCrumb();
 }
 
-function showCate(painting) {
+function makeBreadCrumb() {
+  fetch("http://tolloman.com/mmd21ex/wp-json/wp/v2/categories?_fields=name,id")
+    .then(function (res) {
+      return res.json();
+    })
+    .then(function (data) {
+      handleBreadCrumbs(data);
+    });
+
+  function handleBreadCrumbs(data) {
+    console.log(data);
+    data.forEach(showCate);
+  }
+}
+
+function showCate(category) {
   //console.log(painting.name);
   const template = document.querySelector(".catetemp").content;
   const copy = template.cloneNode(true);
-  copy.querySelector("a.cate-link").textContent = painting.name;
+  copy.querySelector("a.cate-link").textContent = category.name;
   copy
     .querySelector("a.cate-link")
-    .setAttribute("href", "productp.html?_fields=" + painting.name);
+    .setAttribute("href", "product-list.html?catid=" + category.id);
   const parent = document.querySelector(".menu-op");
   parent.appendChild(copy);
 }
 
-fetch(
-  "http://tolloman.com/mmd21ex/wp-json/wp/v2/painting?per_page=100&orderby=title&order=asc&_embed"
-)
-  .then(function (source) {
-    return source.json();
-  })
-  .then(function (data) {
-    productList(data);
-  });
-
+//function for the showing the different catid
+function getProducts(catid) {
+  if (catid) {
+    productlistURL += "&categories=" + catid;
+  } // if one of the cat is click it directs to the different id
+  console.log("yo" + productlistURL);
+  fetch(productlistURL)
+    .then(function (source) {
+      return source.json();
+    })
+    .then(function (data) {
+      productList(data);
+    });
+}
 function productList(data) {
   //console.log(data);
   data.forEach(showpaint);
