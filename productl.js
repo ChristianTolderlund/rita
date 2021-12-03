@@ -1,7 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
-const catid = urlParams.get("id");
 
-fetch("http://tolloman.com/mmd21ex/wp-json/wp/v2/painting?categories=" + catid)
+fetch("http://tolloman.com/mmd21ex/wp-json/wp/v2/categories?_fields=name")
   .then(function (res) {
     return res.json();
   })
@@ -14,17 +13,14 @@ function handleBreadCrumbs(data) {
   data.forEach(showCate);
 }
 
-function showCate(painting) {
+function showCate(cate) {
   //console.log(painting.name);
   const template = document.querySelector(".catetemp").content;
   const copy = template.cloneNode(true);
-  copy.querySelector("a.cate-link").textContent = painting.name;
+  copy.querySelector("a.cate-link").textContent = cate.name;
   copy
     .querySelector("a.cate-link")
-    .setAttribute(
-      "href",
-      "product-list.html?categories=" + painting.categories[0]
-    );
+    .setAttribute("href", "product-list.html?_fields=" + cate.name);
   const parent = document.querySelector(".menu-op");
   parent.appendChild(copy);
 }
