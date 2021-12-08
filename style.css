@@ -21,6 +21,10 @@
   /* flex-wrap: wrap; */
   align-items: center;
 }
+.img-display {
+  width: 75%;
+  margin-left: 25px;
+}
 .img-display-page {
   width: 95%;
 }
