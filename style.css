@@ -35,8 +35,10 @@
   margin-top: 60px;
 }
 .cara {
-  width: 50%;
-  margin-left: 25%;
+  width: 100%;
+}
+.carousel-control-next {
+  color: black;
 }
 .btn {
   display: flex;
