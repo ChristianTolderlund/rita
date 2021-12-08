@@ -27,3 +27,14 @@
 .navbar-expand-sm .navbar-collapse {
   justify-content: flex-end;
 }
+#demo {
+  margin-top: 60px;
+}
+.cara {
+  width: 50%;
+  margin-left: 25%;
+}
+.btn {
+  display: flex;
+  margin-left: 80%;
+}
