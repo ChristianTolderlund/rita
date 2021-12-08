@@ -50,3 +50,13 @@
 .h3-upcoming {
   list-style: none;
 }
+.con-cover-img {
+  margin-top: 60px;
+}
+.contact-img {
+  width: 100%;
+}
+.contact-detail {
+  list-style: none;
+  text-align: center;
+}
