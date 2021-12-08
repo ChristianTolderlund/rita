@@ -17,3 +17,14 @@ a {
   clip-path: polygon(0 0, 100% 0, 100% 100vh);
   background: #212121;
 }
+.wrapper {
+  display: grid;
+  grid-template-rows: 100vh 25vh;
+}
+.about-me-landing {
+  padding: 5px;
+}
+.btn {
+  display: flex;
+  margin-left: 80%;
+}
