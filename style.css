@@ -1,3 +1,4 @@
+/*Golbal Navigation bar the CSS of it*/
 .header-nav {
   display: flex;
   justify-content: space-between;
@@ -32,7 +33,6 @@
   border-radius: 3px;
   transition: all 0.5s ease-in-out;
 }
-
 .menu-burger::before {
   transform: translateX(-16px);
 }
@@ -60,6 +60,7 @@
 .dropdown {
   position: relative;
   margin-top: 15%;
+  z-index: 1;
 }
 .drop-list {
   list-style: none;
@@ -78,6 +79,103 @@
 }
 .drop-list li a:hover {
   background-color: rgb(57, 59, 57);
+}
+/*Index page CSS*/
+.hero {
+  position: relative;
+  z-index: -1;
+}
+.hero-logo {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+/*for about me and about colorflow*/
+.about-landing h1 {
+  text-align: center;
+  color: #09504f;
+}
+.text-landing {
+  text-align: center;
+  padding: 1rem;
+}
+.btn-info {
+  color: white;
+  background-color: #09504f;
+  margin-left: 70%;
+  margin-bottom: 10%;
+}
+
+/*the slideshow*/
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*plant a tree*/
+.plant-atree h1 {
+  text-align: left;
+  color: #09504f;
+}
+.text-img {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  margin-top: -10%;
+}
+.tree {
+  margin-top: 50%;
+}
+.text-index {
+  text-align: center;
+  margin-top: 20%;
+}
+/*Footer*/
+.footer {
+  background-color: darkgray;
+  display: grid;
+  grid-template-columns: 15% 15% 15% 55%;
+  align-items: center;
+}
+.logo-f {
+  align-content: center;
+  margin-left: 15%;
+}
+.contact-f {
+  text-align: right;
+  font-size: 35px;
+  text-decoration: none;
+  margin-right: 10%;
 }
 
 .mainlist {
