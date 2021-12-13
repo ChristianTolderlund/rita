@@ -4,7 +4,6 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  display: block;
 }
 
 .left {
@@ -19,16 +18,15 @@
 }
 .wrapper {
   display: grid;
-  grid-template-rows: 100vh 25vh;
 }
 .about-me-landing {
-  padding: 5px;
+  margin-top: 10px;
 }
 .btn {
   display: flex;
   margin-left: 80%;
 }
 
-.navbar-expand-sm .navbar-collapse {
-  justify-content: flex-end;
+.dropdown {
+  position: absolute;
 }

@@ -1,3 +1,85 @@
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 60%;
+}
+.menu-btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.menu-burger {
+  width: 4px;
+  height: 40px;
+  background-color: black;
+  border-radius: 3px;
+  transition: all 0.5s ease-in-out;
+}
+.menu-burger::before,
+.menu-burger::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  background-color: black;
+  border-radius: 3px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-burger::before {
+  transform: translateX(-16px);
+}
+.menu-burger::after {
+  transform: translateX(16px);
+}
+.menu-btn.open .menu-burger {
+  transform: translateY(50px);
+  background: transparent;
+}
+.menu-btn.open .menu-burger::before {
+  transform: rotate(45deg) translate(-35px, -35px);
+}
+.menu-btn.open .menu-burger::after {
+  transform: rotate(-45deg) translate(35px, -35px);
+}
+#side-nav {
+  position: absolute;
+  /* margin-top: -2vw; */
+  height: 90%;
+  width: 100%;
+  background-color: black;
+  opacity: 80%;
+}
+.dropdown {
+  position: relative;
+  margin-top: 15%;
+}
+.drop-list {
+  list-style: none;
+  text-align: center;
+  position: relative;
+  line-height: 1.75rem;
+}
+.drop-list li {
+  padding: 1rem;
+  font-size: 30px;
+}
+.drop-list li a {
+  color: white;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+.drop-list li a:hover {
+  background-color: rgb(57, 59, 57);
+}
+
 .mainlist {
   display: flex;
 }
@@ -31,32 +113,17 @@
 .img-display-page {
   width: 95%;
 }
-.navbar-expand-sm .navbar-collapse {
-  justify-content: flex-end;
-}
-#demo {
-  margin-top: 60px;
-}
-.cara {
-  width: 100%;
-}
-.carousel-control-next {
-  color: black;
-}
 .btn {
   display: flex;
   margin-left: 80%;
 }
+
 .upcoming {
-  margin: 60px 5px 5px 5px;
   padding: 5px;
   border: 1px solid black;
 }
 .h3-upcoming {
   list-style: none;
-}
-.con-cover-img {
-  margin-top: 60px;
 }
 .contact-img {
   width: 100%;
@@ -64,4 +131,7 @@
 .contact-detail {
   list-style: none;
   text-align: center;
+}
+.carousel-item {
+  width: 100%;
 }
