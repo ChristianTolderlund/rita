@@ -311,19 +311,20 @@ h3 {
   margin-top: -5%;
 }
 
+/*product list css*/
 .mainlist {
   display: flex;
 }
-.cate-menu {
+#cate-menu {
   font-weight: bold;
   list-style-type: none;
   display: inline-block;
-  margin-top: 50px;
 }
 .cate-link {
   text-decoration: none;
   display: inline-block;
-  padding: 20px;
+  padding: 5px;
+  color: #09504f;
 }
 .product-list {
   padding: 5vw;
@@ -336,8 +337,12 @@ h3 {
 }
 .img-display {
   width: 75%;
-  margin-left: 25px;
 }
+.product-list-info {
+  text-align: left;
+  margin-left: 15%;
+}
+
 .product-page {
   margin-top: 60px;
 }

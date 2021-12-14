@@ -30,12 +30,13 @@
   <body>
     <div class="mainlist">
       <ul class="menu-op">
-        <li class="cate-menu"><a href="product-list.html" class="cate-link">All</a></li>
+        <li id="cate-menu"><a href="product-list.html" class="cate-link">All</a></li>
         <template class="catetemp">
-          <li class="cate-menu">
+          <li id="cate-menu">
             <a href="#" class="cate-link"></a>
           </li>
         </template>
+        <li id="cate-menu" class="cate-menu"><a href="custom.html" class="cate-link">Custom</a></li>
       </ul>
     </div>
   <div class="product-list"></div>
@@ -44,18 +45,24 @@
         <article class="painting-display">
           <section class="img-button">
             <div>
-              <img class="img-display" src="#" alt="f" />
+              <a href="product-page.html"><img class="img-display" src="#" alt="f" /></a>
             </div>
-            <div>
+            <div class="product-list-info">
               <div class="name">er</div>
               <div class="price">er</div>
-              <a href="product-page.html" class="button3">View</a>
             </div>
           </section>
         </article>
       </template>
     </main>
   </div>
+  <div class="footer">
+    <img class="logo-f" src="/img/twitter.png" width="75%" />
+    <img class="logo-f" src="/img/fb.png" width="75%" />
+    <img class="logo-f" src="/img/insta.png" width="75%" />
+    <a class="contact-f" href="contact.html">Contact Me</a>
+  </div>
+</div>
   </body>
   <script src="productl.js"></script>
   <script src="nav.js"></script>
