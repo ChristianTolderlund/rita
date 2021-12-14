@@ -179,6 +179,33 @@
   color: white;
 }
 
+/*Contact page css*/
+.contact-img {
+  width: 100%;
+}
+.contact-info h1 {
+  margin-left: 5%;
+  color: #09504f;
+}
+.contact-detail {
+  list-style: none;
+  text-align: center;
+  line-height: 1.5rem;
+}
+.message-sub {
+  text-align: center;
+}
+.btn-sub {
+  color: white;
+  background-color: #09504f;
+  margin-bottom: 10%;
+}
+.newsletter {
+  text-align: center;
+  margin-bottom: 40%;
+  color: #09504f;
+}
+
 .mainlist {
   display: flex;
 }
@@ -223,13 +250,6 @@
 }
 .h3-upcoming {
   list-style: none;
-}
-.contact-img {
-  width: 100%;
-}
-.contact-detail {
-  list-style: none;
-  text-align: center;
 }
 .carousel-item {
   width: 100%;
