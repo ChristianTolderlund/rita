@@ -9,7 +9,9 @@
   </head>
   <header style="z-index: 1">
     <nav class="header-nav">
-      <a class="logo" href="index.html"><img class="logo" src="/img/logoBlack.png" alt="Logo" /></a>
+      <a class="logo" href="index.html"
+        ><img class="logo" src="/img/logoBlack.png" alt="Logo"
+      /></a>
       <div id="menu-toggle" class="menu-btn">
         <div class="menu-burger"></div>
       </div>
@@ -19,6 +21,7 @@
       <div class="dropdown">
         <ul id="drop-list" class="drop-list">
           <li><a class="nav-link" href="index2.html">Home</a></li>
+          <li><a class="nav-link" href="news.html">News</a></li>
           <li><a class="nav-link" href="contact.html">Contact</a></li>
           <li><a class="nav-link" href="#">About Me</a></li>
           <li><a class="nav-link" href="product-list.html">Art Shop</a></li>
@@ -27,15 +30,86 @@
     </nav>
   </header>
   <body>
-    <div class="upcoming">
-      <h2>Upcoming</h2>
-      <ul class="h3-upcoming">
-        <li class="h3-upcoming"><h3>Date</h3></li>
-        <li class="h3-upcoming"><h3>Place</h3></li>
-      <p>
-        oewr k weor kæwe kæwke rwekr ælwke ræwke wlke rækew ækw we kræw keæwl
+    <div id="hero">
+      <img class="hero-logo-news" src="/img/rhnew.png" width="50%" />
+      <video playsinline autoplay muted loop class="news-vid">
+        <source src="/vid/news.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="cfc">
+      <h1></h1>
+      <h1>COLOR FOR CLIMATE</h1>
+      <h4>EXHIBITION</h4>
+      <p class="text-landing">
+        I have a pleasure to invite you to see my latest project, Colors for
+        Climate - a dual exhibition and a part of the upcoming Nature & Culture
+        - International Poetry Film Festival.
+      </p>
+      <div class="news-text-img">
+        <img class="flower" src="/img/Screenshot_7.png" width="100%" />
+        <p class="text-news">
+          The art will be on exhibited at Red Door Gallery from Oct 29 to Nov 23
+        </p>
+      </div>
+      <p class="text-landing">
+        The Colors for Climate project aims to portray different parts of the
+        world that deserve our attention. My mission is to take the greatest and
+        most abstract challenges of our time, such as wildlife conservation and
+        climate change, and translate it into something personal and meaningful
+        to every human being.
       </p>
     </div>
+    <div class="upcoming">
+      <h2>Upcoming Events</h2>
+      <table class="news">
+        <tr>
+          <th>Location</th>
+          <th>Date</th>
+        </tr>
+        <tr>
+          <td>Copenhagen</td>
+          <td>18/12/21</td>
+        </tr>
+        <tr>
+          <td>Copenhagen</td>
+          <td>19/12/21</td>
+        </tr>
+        <tr>
+          <td>Copenhagen</td>
+          <td>20/12/21</td>
+        </tr>
+        <tr>
+          <td>Aarhus</td>
+          <td>10/01/22</td>
+        </tr>
+        <tr>
+          <td>Odense</td>
+          <td>12/01/22</td>
+        </tr>
+      </table>
+    </div>
+    <div class="insta-post">
+      <h1>INSTAGRAM</h1>
+      <h3>NEWEST POST</h3>
+      <div class="insta-img">
+        <img src="/img/_DSC0122.jpg" style="width: 100%" />
+        <img src="/img/_DSC0122.jpg" style="width: 100%" />
+        <img src="/img/_DSC0122.jpg" style="width: 100%" />
+        <img src="/img/_DSC0122.jpg" style="width: 100%" />
+        <img src="/img/_DSC0122.jpg" style="width: 100%" />
+        <img src="/img/_DSC0122.jpg" style="width: 100%" />
+        <img src="/img/_DSC0122.jpg" style="width: 100%" />
+        <img src="/img/_DSC0122.jpg" style="width: 100%" />
+        <img src="/img/_DSC0122.jpg" style="width: 100%" />
+      </div>
+    </div>
+    <div class="footer">
+      <img class="logo-f" src="/img/twitter.png" width="75%" />
+      <img class="logo-f" src="/img/fb.png" width="75%" />
+      <img class="logo-f" src="/img/insta.png" width="75%" />
+      <a class="contact-f" href="contact.html">Contact Me</a>
+    </div>
+  </div>
   </body>
   <script src="nav.js"></script>
 </html>

@@ -178,10 +178,82 @@
   margin-right: 10%;
   color: white;
 }
+/*News page css*/
+#hero {
+  position: relative;
+  z-index: -1;
+}
+.news-vid {
+  width: 100%;
+}
+.hero-logo-news {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+}
+.cfc {
+  background-color: white;
+  margin-top: -75%;
+}
+.cfc h1 {
+  font-size: 25px;
+  padding: 0.1rem;
+  text-align: center;
+  color: #09504f;
+}
+.cfc h4 {
+  text-align: center;
+  color: #09504f;
+}
+.flower {
+  margin-top: 20%;
+}
+.news-text-img {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: -10%;
+}
+.text-news {
+  text-align: center;
+  margin-top: 50%;
+  padding: 0.5rem;
+}
+.upcoming {
+  margin: 20px;
+  border: 2px solid black;
+}
+.upcoming h2 {
+  text-align: center;
+}
+table.news {
+  table-layout: auto;
+  width: 100%;
+  line-height: 01.5rem;
+  margin-bottom: 5%;
+}
+tr {
+  text-align: center;
+}
+.insta-post h1,
+h3 {
+  text-align: center;
+  color: #09504f;
+}
+.insta-img {
+  padding: 5vw;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 0.5fr));
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  margin-bottom: 10%;
+}
 
 /*Contact page css*/
 .contact-img {
   width: 100%;
+  height: 50vh;
 }
 .contact-info h1 {
   margin-left: 5%;
@@ -244,13 +316,6 @@
   margin-left: 80%;
 }
 
-.upcoming {
-  padding: 5px;
-  border: 1px solid black;
-}
-.h3-upcoming {
-  list-style: none;
-}
 .carousel-item {
   width: 100%;
 }
