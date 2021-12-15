@@ -336,13 +336,32 @@ h3 {
   align-items: center;
 }
 .img-display {
-  width: 75%;
+  width: 70%;
 }
 .product-list-info {
   text-align: left;
   margin-left: 15%;
 }
 
+/*Custom page css*/
+.custom-img {
+  position: relative;
+  margin: 13% 13% 0 13%;
+  z-index: -1;
+}
+.text-custom {
+  padding: 1rem;
+}
+.custom h1 {
+  font-size: 25px;
+  padding: 0.1rem;
+  text-align: center;
+  color: #09504f;
+}
+.custom h3 {
+  margin-top: -5%;
+}
+/*Product page css*/
 .product-page {
   margin-top: 60px;
 }
