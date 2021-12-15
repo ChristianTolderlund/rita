@@ -13,6 +13,9 @@ function showpaint(painting) {
   const copy = template.cloneNode(true);
   //???
   copy.querySelector(".img-display-page").src = painting.photo.guid;
+  copy.querySelector(".img-display-page1").src = painting.photo.guid;
+  copy.querySelector(".img-display-page2").src = painting.photo1.guid;
+  copy.querySelector(".img-display-page3").src = painting.photo1.guid;
   //copy.querySelector(".img-display-page").src = painting.photo[0].guid;
   //bags._links["wp:featuredmedia"][0].href;
   copy.querySelector(".name").textContent = `${painting.title.rendered}`;
@@ -23,4 +26,9 @@ function showpaint(painting) {
   console.log(parent);
   //append
   parent.appendChild(copy);
+}
+
+function clickme(smallImg) {
+  var fullImg = document.getElementById("fullImg");
+  fullImg.src = smallImg.src;
 }

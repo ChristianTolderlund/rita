@@ -59,7 +59,7 @@
 }
 .dropdown {
   position: relative;
-  margin-top: 15%;
+  margin-top: 5%;
   z-index: 1;
 }
 .drop-list {
@@ -104,6 +104,8 @@
   background-color: #09504f;
   margin-left: 70%;
   margin-bottom: 10%;
+  border: none;
+  padding: 0.5rem;
 }
 
 /*the slideshow*/
@@ -271,6 +273,8 @@ h3 {
   color: white;
   background-color: #09504f;
   margin-bottom: 10%;
+  border: none;
+  padding: 0.5rem;
 }
 .newsletter {
   text-align: center;
@@ -368,17 +372,61 @@ h3 {
   margin-top: -5%;
 }
 /*Product page css*/
+
 .product-page {
   margin-top: 60px;
 }
+.aside {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
 .img-display-page {
-  width: 95%;
+  width: 100%;
+  grid-row-start: 1;
+  grid-row-end: 4;
 }
-.btn {
-  display: flex;
-  margin-left: 80%;
+.img-display-page3 {
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
-
 .carousel-item {
   width: 100%;
+}
+.collapsible {
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+}
+.collapsible input {
+  display: none;
+}
+.collapsible label {
+  background: gray;
+  cursor: pointer;
+  padding: 0.3rem;
+  margin: 0 3rem 0 3rem;
+}
+.collapsible label::after {
+  content: "";
+}
+.collapsible-text {
+  max-height: 1px;
+  overflow: hidden;
+  top: -100%;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+  padding: 1rem;
+}
+
+.collapsible input:checked ~ .collapsible-text {
+  max-height: 450px;
+  opacity: 1;
+  top: 0;
+}
+.descripition {
+  color: black;
+}
+#pp {
+  margin-top: 11%;
 }
