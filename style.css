@@ -312,6 +312,12 @@ h3 {
 }
 
 /*product list css*/
+.product-title {
+  font-size: 25px;
+  padding: 0.1rem;
+  text-align: center;
+  color: #09504f;
+}
 .mainlist {
   display: flex;
 }
