@@ -340,17 +340,20 @@ h3 {
   padding: 5vw;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, o.5fr));
   justify-content: space-between;
   /* flex-wrap: wrap; */
   align-items: center;
 }
 .img-display {
-  width: 70%;
+  width: 100%;
+  text-align: center;
+}
+.img-link {
+  text-align: center;
 }
 .product-list-info {
-  text-align: left;
-  margin-left: 15%;
+  margin: 5% 0 10% 0;
 }
 
 /*Custom page css*/

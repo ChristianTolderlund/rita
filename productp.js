@@ -15,7 +15,7 @@ function showpaint(painting) {
   copy.querySelector(".img-display-page").src = painting.photo.guid;
   copy.querySelector(".img-display-page1").src = painting.photo.guid;
   copy.querySelector(".img-display-page2").src = painting.photo1.guid;
-  copy.querySelector(".img-display-page3").src = painting.photo1.guid;
+  copy.querySelector(".img-display-page3").src = painting.photo2.guid;
   //copy.querySelector(".img-display-page").src = painting.photo[0].guid;
   //bags._links["wp:featuredmedia"][0].href;
   copy.querySelector(".name").textContent = `${painting.title.rendered}`;
