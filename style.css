@@ -1,3 +1,41 @@
+@font-face {
+  font-family: "avenir-black";
+  src: url(fonts/avenir-lt-std-black.ttf);
+  font-style: normal;
+}
+h1,
+button,
+.nav-link {
+  font-family: "avenir-black";
+}
+@font-face {
+  font-family: avenir-roman;
+  src: url(fonts/avenir-lt-std-roman.otf);
+}
+h2,
+h3,
+h4,
+h5,
+th,
+.name,
+.price,
+.collapsible {
+  font-family: "avenir-roman";
+}
+@font-face {
+  font-family: "futura-light";
+  src: url(fonts/futura-light-font.ttf);
+}
+p,
+td,
+input,
+textarea,
+li {
+  font-family: "futura-light";
+}
+ul {
+  padding: 0;
+}
 /*Golbal Navigation bar the CSS of it*/
 .header-nav {
   display: flex;
@@ -67,6 +105,7 @@
   text-align: center;
   position: relative;
   line-height: 1.75rem;
+  margin: 0%;
 }
 .drop-list li {
   padding: 1rem;
@@ -115,7 +154,7 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: auto;
   position: relative;
   margin: auto;
 }
@@ -164,6 +203,8 @@
 }
 /*Footer*/
 .footer {
+  position: absolute;
+  width: 100%;
   background-color: darkgray;
   display: grid;
   grid-template-columns: 15% 15% 15% 55%;
@@ -324,6 +365,8 @@ h3 {
 }
 .mainlist {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 #cate-menu {
   font-weight: bold;
@@ -331,9 +374,10 @@ h3 {
   display: inline-block;
 }
 .cate-link {
+  font-size: 20px;
   text-decoration: none;
   display: inline-block;
-  padding: 5px;
+  padding: 10px;
   color: #09504f;
 }
 .product-list {
