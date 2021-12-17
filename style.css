@@ -285,9 +285,6 @@ h3 {
 .insta-img {
   padding: 5vw;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(75px, 0.5fr));
-  justify-content: space-between;
   /* flex-wrap: wrap; */
   align-items: center;
   margin-bottom: 10%;
