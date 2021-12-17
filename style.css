@@ -341,6 +341,7 @@ h3 {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-gap: 0 2%;
   justify-content: space-between;
   /* flex-wrap: wrap; */
   align-items: center;
