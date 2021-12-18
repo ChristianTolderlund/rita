@@ -37,6 +37,9 @@ li {
 ul {
   padding: 0;
 }
+h1 {
+  font-size: 25px;
+}
 /*Golbal Navigation bar the CSS of it*/
 .header-nav {
   display: flex;
@@ -240,7 +243,6 @@ ul {
   margin-top: -75%;
 }
 .cfc h1 {
-  font-size: 25px;
   padding: 0.1rem;
   text-align: center;
   color: #09504f;
@@ -335,7 +337,6 @@ h3 {
   margin-top: -75%;
 }
 .about h1 {
-  font-size: 25px;
   padding: 0.1rem;
   text-align: center;
   color: #09504f;
@@ -409,7 +410,6 @@ h3 {
   padding: 1rem;
 }
 .custom h1 {
-  font-size: 25px;
   padding: 0.1rem;
   text-align: center;
   color: #09504f;
@@ -475,4 +475,79 @@ h3 {
 }
 #pp {
   margin-top: 11%;
+}
+/*Break points*/
+@media (min-width: 480px) {
+  #hero {
+    height: 850px;
+  }
+  p {
+    font-size: 20px;
+  }
+  button {
+    font-size: 20px;
+  }
+  .slideshow-container {
+    height: 250px;
+  }
+  .contact-f {
+    font-size: 30px;
+  }
+  #name,
+  #email,
+  #subject,
+  #message {
+    resize: horizontal;
+    width: 300px;
+  }
+  h1 {
+    font-size: ;
+  }
+}
+@media (min-width: 768px) {
+  .menu-btn {
+    width: 55px;
+    height: 55px;
+    margin: 3%;
+  }
+  .menu-burger {
+    width: 10px;
+    height: 55px;
+    border-radius: 10px;
+  }
+  .menu-burger::before,
+  .menu-burger::after {
+    width: 10px;
+    height: 55px;
+    border-radius: 10px;
+  }
+  .menu-burger::before {
+    transform: translateX(-26px);
+  }
+  .menu-burger::after {
+    transform: translateX(26px);
+  }
+  #hero {
+    height: 1100px;
+  }
+  h1 {
+    font-size: 45px;
+    margin: 0.5em;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h4 {
+    font-size: 25px;
+    margin: 0.5em;
+  }
+  p {
+    font-size: 30px;
+  }
+  th {
+    font-size: 25px;
+  }
+  td {
+    font-size: 20px;
+  }
 }
