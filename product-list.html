@@ -5,60 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product List</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <header>
-    <nav class="header-nav">
-      <a class="logo" href="index.html"><img class="logo" src="/img/logoBlack.png" alt="Logo" /></a>
-      <div id="menu-toggle" class="menu-btn">
-        <div class="menu-burger"></div>
-      </div>
-    </nav>
-
-    <nav id="side-nav">
-      <div class="dropdown">
-        <ul id="drop-list" class="drop-list">
-          <li><a class="nav-link" href="index2.html">Home</a></li>
-          <li><a class="nav-link" href="news.html">News</a></li>
-          <li><a class="nav-link" href="contact.html">Contact</a></li>
-          <li><a class="nav-link" href="about-me.html">About Me</a></li>
-          <li><a class="nav-link" href="product-list.html">Art Shop</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
   <body>
+    <header>
+      <nav class="header-nav">
+        <a class="logo" href="index.html"
+          ><img class="logo" src="/img/logoBlack.png" alt="Logo"
+        /></a>
+        <div id="menu-toggle" class="menu-btn">
+          <div class="menu-burger"></div>
+        </div>
+      </nav>
+
+      <nav id="side-nav">
+        <div class="dropdown">
+          <ul id="drop-list" class="drop-list">
+            <li><a class="nav-link" href="index2.html">Home</a></li>
+            <li><a class="nav-link" href="news.html">News</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+            <li><a class="nav-link" href="about-me.html">About Me</a></li>
+            <li><a class="nav-link" href="product-list.html">Art Shop</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <h1 class="product-title">SERIES</h1>
     <div class="mainlist">
       <ul class="menu-op">
-        <li id="cate-menu"><a href="product-list.html" class="cate-link">All</a></li>
+        <li id="cate-menu">
+          <a href="product-list.html" class="cate-link">All</a>
+        </li>
         <template class="catetemp">
           <li id="cate-menu">
             <a href="#" class="cate-link"></a>
           </li>
         </template>
-        <li id="cate-menu" class="cate-menu"><a href="custom.html" class="cate-link">Custom</a></li>
+        <li id="cate-menu" class="cate-menu">
+          <a href="custom.html" class="cate-link">Custom</a>
+        </li>
       </ul>
     </div>
-  <div class="product-list">
+    <div class="product-list">
       <template id="painting-temp">
-      <article class="painting-pro">
-            <div class="product-list-info"></div>
-              <a class="img-link" href="product-page.html"><img class="img-display" src="#" alt="f" /></a>
-              <div class="name">er</div>
-              <div class="price">er</div>
-            </div>
-          </article>
+        <article class="painting-pro">
+          <div class="product-list-info">
+            <a class="img-link" href="product-page.html"
+              ><img class="img-display" src="#" alt="f"
+            /></a>
+            <div class="name">er</div>
+            <div class="price">er</div>
+          </div>
+        </article>
       </template>
-  </div>
-  <div class="footer">
-    <img class="logo-f" src="/img/twitter.png" width="75%" />
-    <img class="logo-f" src="/img/fb.png" width="75%" />
-    <img class="logo-f" src="/img/insta.png" width="75%" />
-    <a class="contact-f" href="contact.html">Contact Me</a>
-  </div>
-</div>
+    </div>
+    <div class="footer">
+      <img class="logo-f" src="/img/twitter.png" style="width: 75%" alt="" />
+      <img class="logo-f" src="/img/fb.png" style="width: 75%" alt="" />
+      <img class="logo-f" src="/img/insta.png" style="width: 75%" alt="" />
+      <a class="contact-f" href="contact.html">Contact Me</a>
+    </div>
+    <script src="productl.js"></script>
+    <script src="nav.js"></script>
   </body>
-  <script src="productl.js"></script>
-  <script src="nav.js"></script>
 </html>

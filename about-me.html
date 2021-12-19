@@ -7,37 +7,42 @@
     <title>About Me</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <header>
-    <nav class="header-nav">
-      <a class="logo" href="index.html"
-        ><img class="logo" src="/img/logoBlack.png" alt="Logo"
-      /></a>
-      <div id="menu-toggle" class="menu-btn">
-        <div class="menu-burger"></div>
-      </div>
-    </nav>
-
-    <nav id="side-nav">
-      <div class="dropdown">
-        <ul id="drop-list" class="drop-list">
-          <li><a class="nav-link" href="index2.html">Home</a></li>
-          <li><a class="nav-link" href="news.html">News</a></li>
-          <li><a class="nav-link" href="contact.html">Contact</a></li>
-          <li><a class="nav-link" href="about-me.html">About Me</a></li>
-          <li><a class="nav-link" href="product-list.html">Art Shop</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
   <body>
+    <header>
+      <nav class="header-nav">
+        <a class="logo" href="index.html"
+          ><img class="logo" src="/img/logoBlack.png" alt="Logo"
+        /></a>
+        <div id="menu-toggle" class="menu-btn">
+          <div class="menu-burger"></div>
+        </div>
+      </nav>
+
+      <nav id="side-nav">
+        <div class="dropdown">
+          <ul id="drop-list" class="drop-list">
+            <li><a class="nav-link" href="index2.html">Home</a></li>
+            <li><a class="nav-link" href="news.html">News</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+            <li><a class="nav-link" href="about-me.html">About Me</a></li>
+            <li><a class="nav-link" href="product-list.html">Art Shop</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <div id="hero">
-      <img class="hero-logo-about" src="/img/rhabout.png" width="50%" />
+      <img
+        class="hero-logo-about"
+        src="/img/rhabout.png"
+        style="width: 50%"
+        alt=""
+      />
       <video playsinline autoplay muted loop class="news-vid">
         <source src="/vid/index.mp4" type="video/mp4" />
       </video>
     </div>
     <div class="about">
-      <h1></h1>
+      <br />
       <h1>ABOUT ME</h1>
       <p class="text-about">
         My name is Rita Howis. I am a creative rebel and an artist by heart.
@@ -54,7 +59,7 @@
 
         My art is showcased and sold across the world - from Japan to the U.S.
       </p>
-      <img class="about-img" src="/img/_DSC0146.jpg" width="100%" />
+      <img class="about-img1" src="/img/_DSC0146.jpg" alt="" />
       <h1>ABOUT COLORFLOW</h1>
       <br />
       <h5>What is colorflow?</h5>
@@ -83,14 +88,14 @@
         Contact me if you are interested in a workshop.
       </p>
       <div class="btn-place">
-        <a href="contact.html"
-          ><button type="button" class="btn-sub">Contact Me</button></a
-        >
+        <form method="get" action="contact.html">
+          <button type="submit" class="btn-sub">Contact Me</button>
+        </form>
       </div>
       <h1>PLANT A TREE</h1>
       <h3>INITIATIVE</h3>
       <div class="about-query">
-        <img class="about-img" src="/img/tree.png" width="50%" />
+        <img class="about-img" src="/img/tree.png" alt="" />
         <h5>PLANT A TREE FOR EACH ARTWORK</h5>
         <p id="smaller-text" class="text-about">
           I choose to team up with EcoTree and from now on I plant a tree from
@@ -106,12 +111,11 @@
       </div>
     </div>
     <footer class="footer">
-        <img class="logo-f" src="/img/twitter.png" width="75%" />
-        <img class="logo-f" src="/img/fb.png" width="75%" />
-        <img class="logo-f" src="/img/insta.png" width="75%" />
-        <a class="contact-f" href="contact.html">Contact Me</a>
+      <img class="logo-f" src="/img/twitter.png" style="width: 75%" alt="" />
+      <img class="logo-f" src="/img/fb.png" style="width: 75%" alt="" />
+      <img class="logo-f" src="/img/insta.png" style="width: 75%" alt="" />
+      <a class="contact-f" href="contact.html">Contact Me</a>
     </footer>
-    </div>
+    <script src="nav.js"></script>
   </body>
-  <script src="nav.js"></script>
 </html>

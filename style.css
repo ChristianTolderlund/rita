@@ -141,6 +141,12 @@ h3 {
   text-align: center;
   color: #09504f;
 }
+.about-img1 {
+  width: 100%;
+}
+.about-img {
+  width: 50%;
+}
 .text-landing {
   text-align: center;
   padding: 1rem;
@@ -633,6 +639,9 @@ h3 {
     grid-template-columns: 50% 50%;
     align-items: center;
   }
+  .about-img1 {
+    padding: 0 10%;
+  }
   .about-img {
     width: 100%;
     grid-row-start: 1;
@@ -865,6 +874,7 @@ h3 {
     font-size: 35px;
     padding: 0 20%;
   }
+  .about-img1,
   .about-img {
     width: 75%;
     margin-left: 12.5%;

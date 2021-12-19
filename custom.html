@@ -7,33 +7,38 @@
     <title>Custom Paintings</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <header>
-    <nav class="header-nav">
-      <a class="logo" href="index.html"
-        ><img class="logo" src="/img/logoBlack.png" alt="Logo"
-      /></a>
-      <div id="menu-toggle" class="menu-btn">
-        <div class="menu-burger"></div>
-      </div>
-    </nav>
-
-    <nav id="side-nav">
-      <div class="dropdown">
-        <ul id="drop-list" class="drop-list">
-          <li><a class="nav-link" href="index2.html">Home</a></li>
-          <li><a class="nav-link" href="news.html">News</a></li>
-          <li><a class="nav-link" href="contact.html">Contact</a></li>
-          <li><a class="nav-link" href="about-me.html">About Me</a></li>
-          <li><a class="nav-link" href="product-list.html">Art Shop</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
   <body>
+    <header>
+      <nav class="header-nav">
+        <a class="logo" href="index.html"
+          ><img class="logo" src="/img/logoBlack.png" alt="Logo"
+        /></a>
+        <div id="menu-toggle" class="menu-btn">
+          <div class="menu-burger"></div>
+        </div>
+      </nav>
+
+      <nav id="side-nav">
+        <div class="dropdown">
+          <ul id="drop-list" class="drop-list">
+            <li><a class="nav-link" href="index2.html">Home</a></li>
+            <li><a class="nav-link" href="news.html">News</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+            <li><a class="nav-link" href="about-me.html">About Me</a></li>
+            <li><a class="nav-link" href="product-list.html">Art Shop</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <div class="custom">
-      <img class="hero-custom" src="/img/custom.png" width="100%" />
+      <img
+        class="hero-custom"
+        src="/img/custom.png"
+        style="width: 100%"
+        alt=""
+      />
       <div class="custom-query">
-        <img class="custom-img" src="/img/_DSC0146.jpg" />
+        <img class="custom-img" src="/img/_DSC0146.jpg" alt="" />
         <p class="text-custom">
           I can offer you a customised piece of unique artwork based on your
           color preferences and desired size. I guide you through the process of
@@ -44,9 +49,9 @@
         </p>
       </div>
       <div class="btn-place">
-        <a href="contact.html"
-          ><button type="button" class="btn-sub">Contact Me</button></a
-        >
+        <form method="get" action="contact.html">
+          <button type="submit" class="btn-sub">Contact Me</button>
+        </form>
       </div>
       <h1>CUSTOMERS</h1>
       <h3>TESTIMONIALS</h3>
@@ -54,30 +59,30 @@
       <div id="custom-slider" class="slideshow-container">
         <!-- Full-width images -->
         <div class="mySlides fade">
-          <img src="/img/customer1.png" style="width: 100%" />
+          <img src="/img/customer1.png" style="width: 100%" alt="" />
         </div>
 
         <div class="mySlides fade">
-          <img src="/img/customer1-review.png" style="width: 100%" />
+          <img src="/img/customer1-review.png" style="width: 100%" alt="" />
         </div>
 
         <div class="mySlides fade">
-          <img src="/img/customer2.png" style="width: 100%" />
+          <img src="/img/customer2.png" style="width: 100%" alt="" />
         </div>
 
         <div class="mySlides fade">
-          <img src="/img/customer2-review.png" style="width: 100%" />
+          <img src="/img/customer2-review.png" style="width: 100%" alt="" />
         </div>
       </div>
       <br /><br />
       <div class="footer">
-        <img class="logo-f" src="/img/twitter.png" width="75%" />
-        <img class="logo-f" src="/img/fb.png" width="75%" />
-        <img class="logo-f" src="/img/insta.png" width="75%" />
+        <img class="logo-f" src="/img/twitter.png" style="width: 75%" alt="" />
+        <img class="logo-f" src="/img/fb.png" style="width: 75%" alt="" />
+        <img class="logo-f" src="/img/insta.png" style="width: 75%" alt="" />
         <a class="contact-f" href="contact.html">Contact Me</a>
       </div>
     </div>
+    <script src="nav.js"></script>
+    <script src="slideshow.js"></script>
   </body>
-  <script src="nav.js"></script>
-  <script src="slideshow.js"></script>
 </html>

@@ -7,32 +7,42 @@
     <title>Index</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <header>
-    <nav class="header-nav">
-      <a class="logo" href="index.html"
-        ><img class="logo" src="/img/logoBlack.png" alt="Logo"
-      /></a>
-      <div id="menu-toggle" class="menu-btn">
-        <div class="menu-burger"></div>
-      </div>
-    </nav>
-
-    <nav id="side-nav">
-      <div class="dropdown">
-        <ul id="drop-list" class="drop-list">
-          <li><a class="nav-link" href="index.html">Home</a></li>
-          <li><a class="nav-link" href="news.html">News</a></li>
-          <li><a class="nav-link" href="contact.html">Contact</a></li>
-          <li><a class="nav-link" href="about-me.html">About Me</a></li>
-          <li><a class="nav-link" href="product-list.html">Art Shop</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
   <body>
+    <header>
+      <nav class="header-nav">
+        <a class="logo" href="index.html"
+          ><img class="logo" src="/img/logoBlack.png" alt="Logo"
+        /></a>
+        <div id="menu-toggle" class="menu-btn">
+          <div class="menu-burger"></div>
+        </div>
+      </nav>
+
+      <nav id="side-nav">
+        <div class="dropdown">
+          <ul id="drop-list" class="drop-list">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="news.html">News</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+            <li><a class="nav-link" href="about-me.html">About Me</a></li>
+            <li><a class="nav-link" href="product-list.html">Art Shop</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <div class="hero">
-      <img class="hero-logo" src="/img/Group-29.png" width="50%" />
-      <img class="hero-pic" src="/img/_DSC0145.jpg" width="100%" />
+      <img
+        class="hero-logo"
+        src="/img/Group-29.png"
+        style="width: 50%"
+        alt=""
+      />
+      <img
+        class="hero-pic"
+        src="/img/_DSC0145.jpg"
+        style="width: 100%"
+        alt=""
+      />
     </div>
     <div class="about-landing">
       <h1>About Me</h1>
@@ -41,9 +51,9 @@
         Originally from Russia, I have lived in 7 countries and now happily
         settled in Denmark - the hotspot for design and sustainability.
       </p>
-      <a href="about-me.html"
-        ><button type="button" class="btn-info">Learn More</button></a
-      >
+      <form method="get" action="about-me.html">
+        <button type="submit" class="btn-info">Learn More</button>
+      </form>
     </div>
     <div class="about-landing">
       <h1>About Colorflow</h1>
@@ -52,48 +62,48 @@
         relate to. Inspired by nature, I've developed a unique technique using
         fluid paint materials that mimic our natural environment.
       </p>
-      <a href="about-me.html"
-        ><button type="button" class="btn-info">Learn More</button></a
-      >
+      <form method="get" action="about-me.html">
+        <button type="submit" class="btn-info">Learn More</button>
+      </form>
     </div>
     <!-- Slideshow container https://www.w3schools.com/howto/howto_js_slideshow.asp -->
     <div id="index-query" class="slideshow-container">
       <!-- Full-width images -->
       <div class="mySlides fade">
-        <img class="slider" src="/img/_DSC0114.jpg" />
+        <img class="slider" src="/img/_DSC0114.jpg" alt="" />
       </div>
 
       <div class="mySlides fade">
-        <img class="slider" src="/img/_DSC0119.jpg" />
+        <img class="slider" src="/img/_DSC0119.jpg" alt="" />
       </div>
 
       <div class="mySlides fade">
-        <img class="slider" src="/img/_DSC0122.jpg" />
+        <img class="slider" src="/img/_DSC0122.jpg" alt="" />
       </div>
 
       <div class="plant-atree">
         <h1>Plant A Tree</h1>
         <div class="text-img">
-          <img class="tree" src="/img/tree.png" width="100%" />
+          <img class="tree" src="/img/tree.png" style="width: 100%" alt="" />
           <p class="text-index">
             I choose to team up with EcoTree and from now on I plant a tree from
             each produced or sold painting!
           </p>
         </div>
-        <a href="amout-me.html"
-          ><button id="tree-button" type="button" class="btn-info">
+        <form method="get" action="about-me.html">
+          <button id="tree-button" type="submit" class="btn-info">
             Learn More
-          </button></a
-        >
+          </button>
+        </form>
       </div>
     </div>
     <div class="footer">
-      <img class="logo-f" src="/img/twitter.png" width="75%" />
-      <img class="logo-f" src="/img/fb.png" width="75%" />
-      <img class="logo-f" src="/img/insta.png" width="75%" />
+      <img class="logo-f" src="/img/twitter.png" style="width: 75%" alt="" />
+      <img class="logo-f" src="/img/fb.png" style="width: 75%" alt="" />
+      <img class="logo-f" src="/img/insta.png" style="width: 75%" alt="" />
       <a class="contact-f" href="contact.html">Contact Me</a>
     </div>
+    <script src="nav.js"></script>
+    <script src="slideshow.js"></script>
   </body>
-  <script src="nav.js"></script>
-  <script src="slideshow.js"></script>
 </html>

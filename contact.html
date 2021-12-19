@@ -7,31 +7,31 @@
     <title>Contact</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <header style="z-index: 1">
-    <nav class="header-nav">
-      <a class="logo" href="index.html"
-        ><img class="logo" src="/img/logoBlack.png" alt="Logo"
-      /></a>
-      <div id="menu-toggle" class="menu-btn">
-        <div class="menu-burger"></div>
-      </div>
-    </nav>
-
-    <nav id="side-nav">
-      <div class="dropdown">
-        <ul id="drop-list" class="drop-list">
-          <li><a class="nav-link" href="index2.html">Home</a></li>
-          <li><a class="nav-link" href="news.html">News</a></li>
-          <li><a class="nav-link" href="contact.html">Contact</a></li>
-          <li><a class="nav-link" href="about-me.html">About Me</a></li>
-          <li><a class="nav-link" href="product-list.html">Art Shop</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
   <body>
+    <header style="z-index: 1">
+      <nav class="header-nav">
+        <a class="logo" href="index.html"
+          ><img class="logo" src="/img/logoBlack.png" alt="Logo"
+        /></a>
+        <div id="menu-toggle" class="menu-btn">
+          <div class="menu-burger"></div>
+        </div>
+      </nav>
+
+      <nav id="side-nav">
+        <div class="dropdown">
+          <ul id="drop-list" class="drop-list">
+            <li><a class="nav-link" href="index2.html">Home</a></li>
+            <li><a class="nav-link" href="news.html">News</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+            <li><a class="nav-link" href="about-me.html">About Me</a></li>
+            <li><a class="nav-link" href="product-list.html">Art Shop</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <div class="con-cover-img">
-      <img class="contact-img" src="/img/contact-img.png" />
+      <img class="contact-img" src="/img/contact-img.png" alt="" />
     </div>
     <div class="contact-info">
       <h1>Contact Me</h1>
@@ -42,31 +42,61 @@
     </div>
     <div class="message-sub">
       <form action="#">
-        <input type="text" id="name" name="name" placeholder="Name" size="30"><br><br>
-        <input type="email" id="email" name="email" placeholder="Email" size="30"><br><br>
-        <input type="text" id="subject" name="subject" placeholder="Subject" size="30"><br><br>
-        <textarea placeholder="Type your message here..." id="message" name="message" rows="6" cols="31"></textarea><br><br>
-        <a href="#"
-          ><button type="button" class="btn-sub">Submit</button></a
-        >
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Name"
+          size="30"
+        /><br /><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          size="30"
+        /><br /><br />
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="Subject"
+          size="30"
+        /><br /><br />
+        <textarea
+          placeholder="Type your message here..."
+          id="message"
+          name="message"
+          rows="6"
+          cols="31"
+        ></textarea
+        ><br /><br />
+        <button type="button" class="btn-sub">Submit</button>
       </form>
     </div>
     <div class="newsletter">
-      <h1>SIGN UP FOR MY<br>
-        NEWSLETTER</h1>
+      <h1>
+        SIGN UP FOR MY<br />
+        NEWSLETTER
+      </h1>
       <form action="#">
-        <input type="email" id="email" name="email" placeholder="Email" size="30"><br><br>
-          <button type="button" class="btn-sub">Submit</button></a>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          size="30"
+        /><br /><br />
+        <button type="button" class="btn-sub">Submit</button>
       </form>
     </div>
 
     <div class="footer">
-      <img class="logo-f" src="/img/twitter.png" width="75%" />
-      <img class="logo-f" src="/img/fb.png" width="75%" />
-      <img class="logo-f" src="/img/insta.png" width="75%" />
+      <img class="logo-f" src="/img/twitter.png" style="width: 75%" alt="" />
+      <img class="logo-f" src="/img/fb.png" style="width: 75%" alt="" />
+      <img class="logo-f" src="/img/insta.png" style="width: 75%" alt="" />
       <a class="contact-f" href="contact.html">Contact Me</a>
     </div>
-  </div>
+    <script src="nav.js"></script>
   </body>
-  <script src="nav.js"></script>
 </html>
