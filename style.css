@@ -418,6 +418,7 @@ h3 {
 .water-mark {
   position: absolute;
   margin-left: 75%;
+  opacity: 0.75;
 }
 .img-display {
   width: 100%;
