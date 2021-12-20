@@ -410,6 +410,13 @@ h3 {
   /* flex-wrap: wrap; */
   align-items: center;
 }
+.water {
+  position: relative;
+}
+.water-mark {
+  position: absolute;
+  margin-left: 25%;
+}
 .img-display {
   width: 100%;
   text-align: center;

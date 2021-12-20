@@ -64,6 +64,7 @@ function showpaint(painting) {
   //clont it
   const copy = template.cloneNode(true);
   //change the content
+  copy.querySelector(".water-mark").src = painting.watermark.guid;
   copy.querySelector(".img-display").src =
     painting._embedded[
       "wp:featuredmedia"
