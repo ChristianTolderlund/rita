@@ -146,6 +146,7 @@ h3 {
 }
 .about-img {
   width: 50%;
+  padding: 5%;
 }
 .text-landing {
   text-align: center;
@@ -174,6 +175,7 @@ h3 {
 }
 .slider {
   width: 100%;
+  padding: 0 10%;
 }
 
 /* Fading animation */
@@ -212,6 +214,7 @@ h3 {
   margin-top: -10%;
 }
 .tree {
+  width: 100%;
   margin-top: 50%;
 }
 .text-index {
@@ -556,9 +559,12 @@ h3 {
     align-items: center;
     justify-items: center;
   }
+  .text-index {
+    margin-top: 5%;
+  }
   .tree {
     width: 50%;
-    margin-top: 5%;
+    margin-top: 10%;
   }
   #tree-button {
     margin-left: 35%;
@@ -683,31 +689,6 @@ h3 {
   .contact-f {
     font-size: 40px;
   }
-  /* button {
-    font-size: 22px;
-  }
-  .menu-btn {
-    width: 55px;
-    height: 55px;
-    margin: 3%;
-  }
-  .menu-burger {
-    width: 10px;
-    height: 55px;
-    border-radius: 10px;
-  }
-  .menu-burger::before,
-  .menu-burger::after {
-    width: 10px;
-    height: 55px;
-    border-radius: 10px;
-  }
-  .menu-burger::before {
-    transform: translateX(-26px);
-  }
-  .menu-burger::after {
-    transform: translateX(26px);
-  }*/
   #hero {
     height: 1000px;
   }
