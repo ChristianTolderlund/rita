@@ -233,6 +233,7 @@ h3 {
 }
 .logo-f {
   justify-self: center;
+  width: 75%;
 }
 .contact-f {
   text-align: right;
@@ -412,10 +413,11 @@ h3 {
 }
 .water {
   position: relative;
+  z-index: -1;
 }
 .water-mark {
   position: absolute;
-  margin-left: 25%;
+  margin-left: 75%;
 }
 .img-display {
   width: 100%;
@@ -734,6 +736,9 @@ h3 {
   .insta-post {
     background-color: white;
   }
+  .contact-img {
+    padding: 0 30% 0 30%;
+  }
   textarea {
     margin: 0px;
     width: 600px;
@@ -822,12 +827,15 @@ h3 {
     margin: 0.5em;
   }
   .flower {
+    padding: 15%;
     width: 75%;
   }
   .text-landing,
-  .text-news,
   .text-landing1 {
     padding: 0 10% 0 10%;
+  }
+  .text-news {
+    margin-top: 20%;
   }
   .slider {
     padding: 15%;
@@ -849,7 +857,7 @@ h3 {
     padding: 0 12.5% 0 12.5%;
   }
   .contact-img {
-    padding: 0 30% 0 30%;
+    padding: 0 35% 0 35%;
   }
   .newsletter {
     margin-bottom: 10%;
@@ -877,6 +885,12 @@ h3 {
 @media (min-width: 1200px) {
   .header-nav {
     height: 100px;
+  }
+  #hero {
+    height: 1500px;
+  }
+  .hero-pic {
+    height: 500px;
   }
   .text-index {
     margin-top: 10%;
